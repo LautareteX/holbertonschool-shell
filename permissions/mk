@@ -1,8 +1,6 @@
 #!/bin/bash
 echo "file name?"
 read file
-echo "Command?"
-read line
-echo "#!/bin/bash" /n &line > $file
+echo "#!/bin/bash" > $file
 chmod u+x $file
 vi $file
