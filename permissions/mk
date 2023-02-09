@@ -4,6 +4,5 @@ read file
 echo "command"
 read command
 echo "#!/bin/bash" > $file
-sed &command &file
 chmod u+x $file
 vi $file
