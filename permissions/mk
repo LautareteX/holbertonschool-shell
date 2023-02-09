@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "file name?"
 read file
-echo "command"
+echo "command?"
 read command
 echo "#!/bin/bash" > $file
-echo \n$command >> $file
+echo "$command" >> $file
 chmod u+x $file
 vi $file
