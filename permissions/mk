@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "file name?"
+read file
+echo "#!/bin/bash" > $file
