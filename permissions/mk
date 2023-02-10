@@ -16,5 +16,5 @@ if [ $response=1 ]
     git commit -m $commit
     git push
   fi
-else [ $response=2 ]
-  fi 
+ else [ $response=2 ]
+   fi 
