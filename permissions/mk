@@ -6,4 +6,3 @@ read command
 echo "#!/bin/bash" > $file
 echo "$command" >> $file
 chmod u+x $file
-vi $file
