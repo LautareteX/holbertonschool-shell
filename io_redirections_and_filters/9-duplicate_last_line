@@ -1,2 +1,2 @@
 #!/bin/bash
-head -n 1 iacta | tail -n 2
+awk '{ a[$0]++ } END{ for(x in a) print a[x], x }' iacta
