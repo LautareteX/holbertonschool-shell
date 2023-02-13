@@ -8,13 +8,16 @@ echo "$command" >> $file
 chmod u+x $file
 echo "You want to upload the file to git? (1=Si 2=No)"
 read response
-if [ $response=1 ]
-  then
+ if [ $response=1 ];
+ then
     git add .
     echo "Commit?"
     read commit
     git commit -m $commit
     git push
-  fi
- else [ $response=2 ]
-   fi 
+ else 
+	 echo "Saliendo"
+ fi
+   
+  
+     
