@@ -6,8 +6,14 @@ read command
 echo "#!/bin/bash" > $file
 echo "$command" >> $file
 chmod u+x $file
-echo "You want to upload the file to git? (1=yes 2=no)"
-read response
+echo Do u want to open the file with vi?
+read open
+ if [ "$open" = "1" ];
+ then 
+         vi $file
+ else
+         echo "D u want to upload the file to git? (1=yes 2=no)"
+         read response
  if [ "$response" = "1" ];
  then
          git add .
